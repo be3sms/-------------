@@ -95,8 +95,8 @@ header>div#name>a {
 
 section#first-page {
     color: #fff;
-    height: 840px;
-    width: 1350px;
+    height: 1200px;
+    width: 1920Rpx;
     background: url("../img/Ж-шапка.jpg") center no-repeat;
     background-size: 100% 100%;
 } 
@@ -130,7 +130,7 @@ section#news .text-news {
     color: #CA5742;
     font-size: 24px;
     font-family: Inter-Regular;
-    margin-top: 920px;
+    margin-top: 1020px;
 }
 
 h1 {
@@ -310,8 +310,8 @@ section#advantages .text-advantages p {
 }
 
 section#news {
-    height: 1000px;
-    width: 1360px;
+    height: 1200px;
+    width: 1920px;
     background: url("../img/Новости.jpg") center no-repeat;
     background-size: 100% 80%;
 } 

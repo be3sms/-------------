@@ -77,54 +77,11 @@ header {
 }
 
 section#home-page {
-    height: 930px;
-    width: 1350px;
+    height: 1200px;
+    width: 1950px;
     background: url("../img/Ж-шапка2.jpg") center no-repeat;
     background-size: 100% 100%;
 }
-
-        /* Шапка с поиском*/
-/*
-* {box-sizing: border-box;}
-form {
-    position: absolute;
-    width: 400px;
-    height: 40px;
-    margin: 0 auto;
-    background: transparent;
-    border: 1px solid #CA5742;
-    margin-top: 10px;
-    margin-left: 430px;
-
-}
-
-input, button {
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-input {
-  width: 100%;
-  height: 42px;
-  padding-left: 15px;
-}
-
-button {
-  height: 42px;
-  width: 42px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-button:before {
-  content: "\f178";
-  font-family: FontAwesome;
-  font-size: 20px;
-  color: #be290e;
-}*/
 
 section#home-page .text-home {
     color: #CA5742;
@@ -167,7 +124,7 @@ section#menu-page>h3 {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column; /* Размещаем элементы в колонку */
-    border-radius: 4px;
+    border-radius: 15px;
     transition: 0.2s;
     position: relative;
     border-radius: 5px;
@@ -252,6 +209,42 @@ section#menu-page>h3 {
     column-gap: 30px;
     row-gap: 40px;
 }
+
+.flip__card .front {
+    backface-visibility: hidden;
+    transition: all .3s ease;
+}
+
+.flip__card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .6s ease;
+    transition-delay: 0.5s;
+}
+
+.flip__card:hover .front {
+    transform: rotateY(0);
+}
+
+.flip__card:hover .back {
+    transform: rotateY(360deg);
+    background: #FDD5B1;
+}
+
+.cards__text {
+    font-size: 17px;
+    font-family: "Inter-Regular";
+    color: #ce7565;
+}
+
+
 
 /*FOOTER*/
 

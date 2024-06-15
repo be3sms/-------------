@@ -77,8 +77,8 @@ header {
 }
 
 section#home-page {
-    height: 930px;
-    width: 1350px;
+    height: 1200px;
+    width: 1950px;
     background: url("../img/Аксес-шапка.jpg") center no-repeat;
     background-size: 100% 100%;
 }
@@ -88,6 +88,11 @@ section#home-page .text-home {
     font-size: 96px;
     font-family: KyivTypeTitling-Bold3;
 }
+
+
+
+
+/*Карточки товаров*/
 
 .card {
     width: 225px;
@@ -180,6 +185,43 @@ section#home-page .text-home {
     column-gap: 30px;
     row-gap: 40px;
 }
+
+.flip__card .front {
+    backface-visibility: hidden;
+    transition: all .3s ease;
+}
+
+.flip__card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .6s ease;
+    transition-delay: 0.5s;
+}
+
+.flip__card:hover .front {
+    transform: rotateY(0);
+}
+
+.flip__card:hover .back {
+    transform: rotateY(360deg);
+    background: #FDD5B1;
+}
+
+.cards__text {
+    font-size: 17px;
+    font-family: "Inter-Regular";
+    color: #ce7565
+}
+
+
+
+
 
 /*FOOTER*/
 
